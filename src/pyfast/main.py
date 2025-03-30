@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from pyfast.db import repo
-import time
 import logging
 import time
 
