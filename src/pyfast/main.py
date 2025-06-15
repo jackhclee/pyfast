@@ -9,6 +9,6 @@ logging.basicConfig(style="{", format="{asctime}.{msecs:03.0f}Z {levelname} [{pr
 app = FastAPI()
 
 @app.get("/")
-async def m():
+async def m() -> str:
   logging.info(f"called def")
   return f"Hello World!!!!!!++ {time.gmtime()} {repo.get_record(99)} {repo.get_all_record()}"
